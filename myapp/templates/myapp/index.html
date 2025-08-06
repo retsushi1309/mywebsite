@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中小企業、個人事業主向け「顧客管理・予約システム」開発</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        /* Initial body opacity for loading animation */
+        body {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <a href="/" class="logo-text">Praxis Web</a>
+            </div>
+            
+            <nav id="mainNavigation" class="main-nav">
+                <ul class="flex space-x-8">
+                    <li><a href="#about" class="nav-link">Praxis Webについて</a></li>
+                    <li><a href="#pricing" class="nav-link">事業内容</a></li>
+                    <li><a href="#contact" class="button-primary">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-header">
+            <img src="{% static 'images/bridge.jpg' %}" alt="Header Background" class="header-bg-image">
+            <div class="overlay"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">DX化でビジネスを飛躍させる</h1>
+                <div class="hero-card fade-in-section">
+                    <p class="hero-subtitle">ワンストップで設計・開発・運用まで対応</p>
+                    <p class="hero-text">
+                        中小企業、個人事業主向けの「予約管理」「顧客管理」「Web制作」「システム開発」<br>
+                        を全てオーダーメイドで提供します!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-intro fade-in-section">
+            <div class="container intro-grid">
+                <!-- 画像を先に -->
+                <div class="intro-image">
+                    <img src="{% static 'images/IMG_0622.jpg' %}" alt="Praxis代表の写真">
+                </div>
+
+                <div class="intro-text">
+                    <h2>Praxis Webについて</h2>
+                    <p>
+                        <span>予約システム</span>や<span>顧客管理システム</span>の開発を中心に、<br>
+                        個人事業主・中小企業の方の業務を効率化するお手伝いをしています。<br>
+                        ヒヤリングから開発、運用まですべて私ひとりで担当。<br>直接やりとりできる<span>安心感</span>と、
+                        人を雇うよりもコストを抑えられる<span>柔軟な体制</span>が強みです。<br>
+                        <span>「ITは私に任せて、本業に集中してください。」</span><br>
+                        そんなサポートができれば嬉しいです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing fade-in-section">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h2 style="font-size: 40px; margin-bottom: 20px;">費用の目安</h2>
+                
+                <p style="margin-bottom: 20px;">
+                    Praxis Webでは、開発から運用までを代表一人で対応することで、中間マージンを削減し、大手に比べてコストを大幅に抑えたシステム導入が可能です。
+                </p>
+                
+                <div style="overflow-x: auto; margin-bottom: 24px;">
+                    <table style="width: 100%; border-collapse: collapse; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; overflow: hidden;">
+                        <thead style="background-color: rgba(255, 255, 255, 0.2);">
+                            <tr>
+                                <th style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); text-align: left; color: white;">プロジェクト期間</th>
+                                <th style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); text-align: left; color: white;">大手制作会社の相場</th>
+                                <th style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); text-align: left; color: white;">Praxis Webの目安</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">1ヶ月規模</td>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">80万〜150万円</td>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">30万〜60万円</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">3ヶ月規模</td>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">150万〜250万円</td>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">60万〜120万円</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">半年規模</td>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">250万〜400万円以上</td>
+                                <td style="padding: 12px; border: 1px solid rgba(255, 255, 255, 0.2); color: white;">120万〜200万円前後</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p style="margin-bottom: 20px;">
+                    実際の金額はご要望や機能によって異なりますが、人を1人雇うよりも安く導入できるケースがほとんどです。
+                </p>
+                <p>
+                    「まずはどのくらいかかるか知りたい」「ざっくり相談してみたい」といった段階でも、お気軽にご相談ください。
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section fade-in-section">
+            <div class="contact-container">
+                <div class="contact-image">
+                    <img src="{% static 'images/plan.jpg' %}" alt="お問い合わせイメージ">
+                </div>
+                <div class="contact-content">
+                    <h2>まずは無料でご相談ください</h2>
+                    <p>
+                        「この内容でどれくらいかかる？」「システム化した方がいい？」<br>
+                        そんな段階でも大丈夫です。<br>
+                        ご予算や業務に応じて、最適な提案をいたします。
+                    </p>
+                    <p>
+                        🔽 実際の予約体験、面談のご希望の方は、<br>
+                        <strong><a href="#demo-reservation">こちらのデモをご利用ください</a></strong>。
+                    </p>
+                    <p>
+                        ご質問やご依頼はこちらのフォームよりお問い合わせください。<br>
+                        ご返信は1営業日以内に対応いたします。
+                    </p>
+                    <a href="#contact-form" class="contact-button">お問い合わせフォームへ</a>
+                    <p class="contact-note">※ご相談・お見積もりは無料です。お気軽にどうぞ。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Praxis Web</h3>
+                <p>&copy; 2025 Praxis Web. All Rights Reserved.</p>
+            </div>
+            
+            <div class="footer-info">
+                <address>
+                    <p>〒731-0112<br>広島県広島市安佐南区東原2丁目13-24</p>
+                    <p>代表：後藤田 烈志</p>
+                    <p>電話：<a href="tel:08086363296">080-8636-3296</a>（平日 10:00 - 17:00）</p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
