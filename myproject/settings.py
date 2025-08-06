@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-p932ndxx_)j!#h+7rpp$rr*2=4+@ku9o-e)*=-@4v4i=!3*3(5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['praxisweb.jp', 'localhost', 'www.praxisweb.jp', '160.251.181.156']
+
 
 
 # Application definition
@@ -119,6 +120,7 @@ STATICFILES_DIRS = [
 ]
 STATIC_URL = 'static/'
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
